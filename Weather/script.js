@@ -22,7 +22,7 @@ function showErr(error){
 }
 key = "182a8e652c1d041d98a733797b2728ae"
 function getWeather(long, lat){
-    api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`
+    api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`
     getData(api)
 }
 async function getData(api){
