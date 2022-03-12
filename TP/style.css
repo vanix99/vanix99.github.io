@@ -1,0 +1,21 @@
+*{box-sizing: border-box;}
+body{font-weight: bold;background-color: blue;}  
+img{width: 50px;padding: 0;}
+.m1{width: 30px;}
+button{margin: 0 5px;background-color: white;padding: 8px 20px;border: 1px solid blue;font-weight: bold;}
+button:hover{background-color: rgb(104, 104, 228);color: white;border: none;}
+button:active{background-color: blue;}
+input{height: 23px;}
+.hide{display: none;}
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error >*{
+    display: inline-block;
+    padding: 5px 20px;
+    transform: scale(1,0);
+    transition: 0.5s;
+}
+    

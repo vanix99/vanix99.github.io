@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;justify-content: center;">
+        <fieldset style="width: 800px">
+            <legend><h1 style="text-align: center;color: blue;">Iformation de payement</h1></legend>
+            <!-- <form action=""> -->
+            <form onsubmit="event.preventDefault()">
+                <label for="name">Nom et prénom du client :</label>
+                <input type="text" id="name"><p>
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse"><p>
+                <label for="num">Numéro de téléphone : (+212)</label>
+                <input type="text" id="num"><p>
+                Type de payment :<p>
+                <div style="display: flex;align-items: center;">
+                    <input type="radio" name="mode" class="modepayement" checked><img class="m1" src="ICONS/paypal.png"><img src="ICONS/paypalTxt.png">&nbsp;&nbsp;
+                    <input type="radio" name="mode" class="modecarte"><img src="ICONS/maestro.png"><img class="m1" src="ICONS/visa.png">
+                </div><p>
+                <div class="paypal">
+                    <label for="email">Entrez votre e-mail :</label>
+                    <input type="text" id="email"><p>
+                    <label for="pwd">Mot de passe :</label>
+                    <input type="password" id="pwd"><p>
+                    <h4>NB: N'oublier d'autoriser la transaction.</h4>
+                </div>
+                <div class="carte hide">
+                    <label>Sélectionnez le type de la carte</label>
+                    <select>
+                        <option>Visa</option>
+                        <option>Master Carte</option>
+                        <option>CMI</option>
+                        <option>Discover</option>
+                    </select>
+                    <label for="num_carte">Numéro de la carte : </label>
+                    <input type="text" id="num_carte"><p>
+                    <label>Expiration Fin</label>
+                    <input type="number" min="1" max="6" value="1">
+                    <input type="number" min="2013" max="2022" value="2013">
+                    <label for="code_ver">Code de vérification : </label>
+                    <input type="text" style="width: 60px;" id="code_ver">
+                </div>
+                <div class="error">
+                    <h4 id="error"></h4>
+                </div>
+                <div style="display: flex;justify-content: center;">
+                    <button id="button">Valider</button>
+                    <button type="reset">Effacer</button>
+                </div>
+            </form>
+            <!-- </form> -->
+        </fieldset>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
