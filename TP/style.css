@@ -1,5 +1,5 @@
 *{box-sizing: border-box;}
-body{font-weight: bold;background-color: blue;}  
+body{font-weight: bold;}  
 img{width: 50px;padding: 0;}
 .m1{width: 30px;}
 button{margin: 0 5px;background-color: white;padding: 8px 20px;border: 1px solid blue;font-weight: bold;}
